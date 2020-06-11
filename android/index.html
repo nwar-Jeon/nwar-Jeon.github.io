@@ -5,7 +5,7 @@ title: Android
 
 <div class="posts">
   {% for post in paginator.posts %}
-  {% if post.category[0] == android % }
+  {% if post.categories[0] == android % }
   <div class="post">
     <h1 class="post-title">
       <a href="/android{{ post.url | absolute_url }}">
