@@ -5,10 +5,10 @@ title: Algorithm
 
 <div class="posts">
   {% for post in paginator.posts %}
-    {% if post.category == "Algorithm" %}
+    <!--{% if post.category == "Algorithm" %}-->
       <div class="post">
         <h1 class="post-title">
-          <a href="/kotlin{{ post.url | absolute_url }}">
+          <a href="{{ post.url | absolute_url }}">
             {{ post.title }}
           </a>
         </h1>
@@ -17,7 +17,7 @@ title: Algorithm
 
         {{ post.content }}
       </div>
-    {% else %}
+    <!--{% else %}-->
   {% endfor %}
 </div>
 
