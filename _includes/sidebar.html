@@ -25,9 +25,9 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/android">Android</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/kotlin">Kotlin</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/algorithm">Algorithm</a>
+    <a class="sidebar-nav-item{% if page.title == 'Android' %} active{% endif %}" href="{{ site.github.repo }}/android">Android</a>
+    <a class="sidebar-nav-item{% if page.title == 'Kotlin' %} active{% endif %}" href="{{ site.github.repo }}/kotlin">Kotlin</a>
+    <a class="sidebar-nav-item{% if page.title == 'Algorithm' %} active{% endif %}" href="{{ site.github.repo }}/algorithm">Algorithm</a>
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 

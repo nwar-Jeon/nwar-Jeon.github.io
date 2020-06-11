@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Home
+title: Algorithm
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
+      <a href="/algorithm{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
     </h1>

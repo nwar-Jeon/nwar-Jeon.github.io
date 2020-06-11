@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Home
+title: Kotlin
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
+      <a href="/kotlin{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
     </h1>
