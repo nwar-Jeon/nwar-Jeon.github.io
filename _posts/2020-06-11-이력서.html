@@ -1,0 +1,638 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>전승민 이력서</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e1813840-cc2a-436b-a70d-ec20db28f3d3" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🖥️</span></div><h1 class="page-title">전승민 이력서</h1></header><div class="page-body"><h2 id="22e4b968-32c5-46aa-9a7e-a4600f081c3b" class="block-color-teal_background">🙋‍♂️ Info</h2><hr id="20ef8103-e7eb-4211-960c-2bb484539873"/><p id="1f4b5a30-4848-448b-8294-ae1d247d8677" class="">🏫 <strong>School </strong></p><p id="b97bbaa6-58e0-45c2-8b66-d11456cfcd97" class="">대덕 S/W 마이스터고등학교 재학 중 (2018.03 ~ 2021.02 졸업 예정)                 </p><div id="acca220b-5d45-45ab-b4d7-39985ac7c861" class="column-list"><div id="28513d1f-1f85-4ccc-b527-323ba601261c" style="width:50%" class="column"><p id="004b6ddd-a9de-4350-9f30-f4cef920309b" class="">📞 <strong>Phone</strong> <div class="indented"><p id="e2fcdba7-9481-4fcc-8e23-8d6a0410105b" class="">010-5755-4970</p></div></p><p id="21613030-d87d-4cd0-8bb3-023d97cc5906" class="">📖 <strong>Github</strong><div class="indented"><p id="8fa2ff88-6520-4ced-b47f-dfbc2f3f1e2a" class=""><a href="https://github.com/nwar-Jeon">https://github.com/nwar-Jeon</a></p></div></p></div><div id="8a245e0f-871a-4964-ac9a-ae7419e15452" style="width:50%" class="column"><p id="d99c6ec4-0f40-4830-95e2-dfeaed26c720" class="">📧 <strong>Email</strong><div class="indented"><p id="682a3169-4c57-4c73-a803-b6f9f5953ca1" class="">nwar0825@naver.com</p></div></p><p id="1a97262b-78c8-436a-8ced-8443f84594c0" class="">🎂 <strong>Birthday</strong><div class="indented"><p id="74fc9c0a-1e72-45e9-bf19-58e860378e32" class="">2002.08.25</p></div></p></div></div><h2 id="a99d32fc-7fff-496e-a15e-3a6dab5c5a94" class="block-color-yellow_background">✒ Language &amp; Framework</h2><hr id="8add9a45-9da6-4602-9fef-567058c9a29a"/><div id="b5d1a587-f779-43a4-a156-02252fa8b460" class="column-list"><div id="10ef15c3-c9b3-4757-8097-79df8db0272d" style="width:9.375%" class="column"><figure id="20ea300a-01c2-4726-acf5-3425f4789cd0" class="image"><a href="Untitled%2020ea300a01c24726acf53425f4789cd0/kotlin.jfif"><img style="width:60px" src="Untitled%2020ea300a01c24726acf53425f4789cd0/kotlin.jfif"/></a></figure></div><div id="ef2cb95b-4540-4ad4-8c4b-1fd56ce35706" style="width:37.5%" class="column"><p id="7e350153-8000-4c6f-aea0-1815c02196c2" class="block-color-blue_background">Productionable</p><p id="7f358d0f-5e26-4228-9ac6-480bc62c1825" class="">Since 2018. 09</p></div><div id="2d7f326f-fdc2-4028-946b-b6d44aa29397" style="width:12.5%" class="column"><figure id="32d30fe1-b689-42ef-a207-d10cca184650" class="image"><a href="Untitled%2020ea300a01c24726acf53425f4789cd0/_android.png"><img style="width:144px" src="Untitled%2020ea300a01c24726acf53425f4789cd0/_android.png"/></a></figure></div><div id="57d7f4d6-6d20-4f59-ab9b-bc791185489f" style="width:40.625000000000014%" class="column"><p id="065ca8bb-6ccc-45de-be0a-1fcf78845e4e" class="block-color-teal_background">Productionable</p><p id="f868571b-1945-4a53-9976-48a6a1ca6a82" class="">Since 2018. 07</p></div></div><div id="1b549e9b-a793-484b-a2ff-60d3b024a558" class="column-list"><div id="d65537cf-cde8-4f84-957a-b4dfb184a56b" style="width:9.375%" class="column"><figure id="2018960d-a827-4866-8f8d-a8c3de70e7ce" class="image"><a href="Untitled%2020ea300a01c24726acf53425f4789cd0/_java.png"><img style="width:72px" src="Untitled%2020ea300a01c24726acf53425f4789cd0/_java.png"/></a></figure></div><div id="7cce5ef0-0326-43e9-a92b-dd70165258c3" style="width:37.5%" class="column"><p id="2aa17f6d-cc43-4efb-b65e-b2de299461f1" class="">Productionable</p><p id="fcc37d5a-4574-43c6-a6b6-1d9467041514" class="">Since 2018. 06</p></div><div id="dad43a4d-bdbb-4494-b583-d7562a0d76c2" style="width:12.5%" class="column"><figure id="2d400af8-f463-4c01-9f06-9f9b74e353bd" class="image"><a href="Untitled%2020ea300a01c24726acf53425f4789cd0/_spring_boot.png"><img style="width:132px" src="Untitled%2020ea300a01c24726acf53425f4789cd0/_spring_boot.png"/></a></figure></div><div id="3091c648-a761-40d3-8912-42ceb1466b7c" style="width:40.625%" class="column"><p id="73dbcff3-55b0-4d48-b238-81560f818b01" class="">Beginner</p><p id="f9fcb582-45d5-40fb-87ab-f67ac172f91e" class="">Since 2019. 08</p></div></div><h2 id="5fb31250-7cfb-4591-b237-bc07fca1e451" class="block-color-orange_background">💪 Technical Skill</h2><hr id="ee31a5b4-a198-4aa0-b571-be7792300cf0"/><div id="109f5092-c391-492d-82f4-40e8c40e9bb9" class="column-list"><div id="9dc5fb25-adb5-43e9-9b42-810726d5a912" style="width:25%" class="column"><p id="e0680b53-bfbe-4af6-b720-4b12e566c6b7" class="">👍 <strong>Android</strong></p><p id="f941f33b-74a7-4a46-abd4-87c9a67396a7" class="">
+</p><p id="583911e9-e773-4ee9-a53c-20b8aad0c920" class="">🏗 <strong>Architecture</strong></p><p id="1619e97a-bf01-4875-ab2c-b3faba1adaf0" class="">📑 <strong>DevTools</strong></p><p id="b55cd577-b623-4221-b9fc-d6f69de96588" class="">👌  <strong>Spring boot</strong></p><p id="3510be63-b190-4194-975b-5effe1e77f46" class="">
+</p><p id="2248eea5-509c-4466-9fe3-df8a8c7dcbad" class="">
+</p></div><div id="e92e6574-926e-47cc-aa77-77711760f44a" style="width:75%" class="column"><p id="af0b7d09-29bd-4d57-b658-28773ec2bdbb" class="">Dagger2, Gilde, Gson, JetPack(AAC), Picasso,</p><p id="e64ed2a4-5af7-4012-b397-70ee2cdbfe21" class="">Retrofit2, RxJava, RxAndroid</p><p id="29753898-9716-4fcd-adc5-bc22d5cd77cd" class="">MVC, MVP, MVVM, Clean Architecture</p><p id="c9eaff98-5017-4259-b731-d5d9a96963b6" class="">Github, Miro, Notion, Postman, Slack, Zeplin</p><p id="a2bed7ea-6e8c-488c-b94f-12fe533c7400" class="">JPA, JDBC, Schedule</p><p id="731fd45b-d5ad-4f76-82b0-3eca94dcb938" class="">
+</p></div></div><h2 id="9d8e62ab-fe4a-477d-9ea5-9f1105d3ec68" class="block-color-purple_background">👨‍💻 Project</h2><hr id="aa4d6b96-8608-4d6e-835b-317aadad22bc"/><div id="a6e5c2ca-6faa-445a-9e37-5b0634dc64ba" class="column-list"><div id="7a90181f-fe2e-448f-a0d6-c086b1a1bb07" style="width:25%" class="column"><hr id="7e4c8128-0514-4f23-b9f9-55541dbcb94b"/></div><div id="9652f17e-75f8-4368-b9ab-3bc881b9f278" style="width:75%" class="column"><hr id="19205c62-3946-4cdb-a5b3-9b27b827912e"/></div></div><div id="2a4c0c23-0a53-48ee-b18a-379140d0d797" class="column-list"><div id="526f42a5-6172-449f-9185-d51a13a8a262" style="width:25%" class="column"><h3 id="4362f5bc-8a9c-4857-8088-efc7aa18b4b0" class="block-color-blue_background">TaxiPot</h3><p id="fbb416b2-62b5-4059-8815-7db5a73797a0" class="">2019.09~2019.11</p><p id="132da7a0-9f48-4f3b-b2c1-8802671817d1" class="">(3개월)</p><p id="5c6f07ab-3f1d-4029-9b80-3266f637dd65" class="">
+</p></div><div id="c70c8cdc-0899-4d7f-b418-25425d299fbb" style="width:75%" class="column"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="24c30536-4b19-4b29-9ac3-2f2380bcd2a0"><div style="font-size:1.5em"><span class="icon">🚖</span></div><div style="width:100%">택시 합승 매칭 앱</div></figure><hr id="8eb9325e-6d3b-453d-9570-334142f9a796"/><ul id="fbe07fa6-e600-4c98-90c8-5b387c81e167" class="bulleted-list"><li><strong>Android 개발 참여율 : 70%</strong></li></ul><ul id="aad8b798-0f73-44ab-bdbd-8a743c8a40df" class="bulleted-list"><li><strong>Back-End 개발 참여율 : 100%</strong></li></ul><hr id="895c7cdd-16bf-4bf1-b6bc-c542d3d4cd80"/><ol id="2d245312-1705-4fd5-aa2f-376b8b8f10b9" class="numbered-list" start="1"><li><strong>Technical Stacks:</strong> RxJava, Retrofit 2, Dagger 2, Google Map, JetPack, Java-WebSocket</li></ol><ol id="590b8e76-f68c-4ce4-9718-0c2c11460e6a" class="numbered-list" start="2"><li><strong>Architectures:</strong> MVVM + Clean Architecture</li></ol><ol id="a3cb0a24-bade-4ef3-b2bd-a8c6e02631f7" class="numbered-list" start="3"><li>Github Repo<ul id="bee7bae0-9521-4a04-b75c-6078eed656cd" class="bulleted-list"><li><a href="https://github.com/TaxiPot/TaxiPot_Android">https://github.com/TaxiPot/TaxiPot_Android</a></li></ul><ul id="7369d1d3-78f2-42cd-bf38-c476315e949c" class="bulleted-list"><li><a href="https://github.com/TaxiPot/TaxiPot_Backend">https://github.com/TaxiPot/TaxiPot_Backend</a></li></ul></li></ol></div></div><div id="9e94feb0-ef18-428a-b708-992914d10c97" class="column-list"><div id="224d2713-2b24-4b91-995c-df3f68dc7095" style="width:25%" class="column"><hr id="54e6e4f0-8c82-4a04-9a83-e0b6bf1e973e"/><h3 id="7a8b9689-0ff7-41fb-a3c7-4d0c1e3d8c4a" class="block-color-teal_background">DSM-Forest</h3><p id="691c2165-3a9e-4f2f-ae34-da52921357a4" class="">2018.12~2018.12</p><p id="c2706f28-c6e2-4066-88ed-17515885aa1b" class="">(1개월)</p><p id="07e63816-71bb-4757-b5aa-8cc4d2025ebb" class="">
+</p></div><div id="b675d4db-2636-44e0-adb2-552a0e5d03e4" style="width:75%" class="column"><hr id="44b7e28d-d489-4e3c-bc9d-9e6c11f595f5"/><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="396a1116-4dc6-4121-b5aa-85ab46bdbb49"><div style="font-size:1.5em"><span class="icon">🎍</span></div><div style="width:100%">학생들을 위한 익명 커뮤니티(페이스북 연동)</div></figure><hr id="fae0f01f-7525-41de-863d-093087f42328"/><ul id="ad3f5db4-22e4-418e-8430-87b63d8caa28" class="bulleted-list"><li><strong>Android 개발 참여율 : 100%</strong></li></ul><hr id="54f1212d-fe22-4d53-9eac-b92169391a8c"/><ol id="d71cd7d3-26e4-4efe-89a9-7d6b37c8a4b6" class="numbered-list" start="1"><li><strong>Technical Stacks: </strong>Retrofit 2, SwipyRefreshLayout, Picasso</li></ol><ol id="1a0acdb5-db47-4304-a57d-98eaa23e0b1c" class="numbered-list" start="2"><li><a href="https://github.com/nwar-Jeon/Forest_Android">https://github.com/nwar-Jeon/Forest_Android</a></li></ol></div></div><p id="7469e429-6bb8-490a-a970-0a6938d72abf" class="">
+</p><p id="9b7435cf-2c20-47be-9da8-f96719cff569" class="">
+</p><p id="6181618f-ca25-44b5-aee5-2e82a3252c68" class="">
+</p><p id="dba16b25-ba5a-494a-aadd-0db3f158fbf5" class="">
+</p><p id="53542a7c-a448-442d-946f-7e00cdadff86" class="">
+</p><p id="e2c79b6c-ffad-4cf5-8035-09f285decf00" class="">
+</p><h2 id="7a79fe5c-b1ac-46d9-9996-4326f9f9570b" class="block-color-purple_background">👨‍💻 Project</h2><hr id="3636e202-63b1-42d5-8883-7ead0f02631e"/><div id="f97aadda-2e9c-41ac-be76-f14821c86fba" class="column-list"><div id="503584f4-fe50-4ae3-9de1-00641596dc23" style="width:25%" class="column"><hr id="f7aa9289-0352-4cab-b7d5-2f80af961336"/><h3 id="d7276ac0-543e-4211-a4dc-31d4d0c0ed76" class="block-color-orange_background">Get-Terra</h3><p id="9a7ea7ea-8344-43ef-b37a-273911824369" class="">2018.09~2018.09 </p><p id="94a2d6ae-b95a-466d-b25a-907eeb6329f0" class="">(1개월)</p><p id="a1184784-c47c-4576-bfc5-de0fb02c8c4c" class="">
+</p></div><div id="bbea8175-d646-4120-9945-f1709186dbd2" style="width:75%" class="column"><hr id="3c30e4d6-94c9-4da8-ae6c-b30702dd9844"/><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="be77665a-bcbc-4c62-9899-08df0119e31e"><div style="font-size:1.5em"><span class="icon">📢</span></div><div style="width:100%">문제풀이 땅따먹기 게임</div></figure><hr id="34ce1740-3b73-4363-ac03-4e09e1e33611"/><ul id="ff49014a-b10c-4d49-aebe-14ddc25fb9c9" class="bulleted-list"><li><strong>Android 개발 참여율 : 70%</strong></li></ul><hr id="899a6b06-d036-40db-94a6-17163bbcc41e"/><ol id="7bb7c784-814b-4b9e-a081-86a17ad47ef8" class="numbered-list" start="1"><li><strong>Technical Stacks: </strong>Retrofit 2, ZXing (QR Code Reader)</li></ol><ol id="8d30fdeb-bd9b-46b4-9f33-d1223da45a8f" class="numbered-list" start="2"><li><strong>Architectures: </strong>MVP</li></ol><ol id="24574d5a-eb0a-4382-9998-cadbe1722d6a" class="numbered-list" start="3"><li><a href="https://github.com/nwar-Jeon/get_Terra">https://github.com/nwar-Jeon/get_Terra</a></li></ol></div></div><p id="bf356ea5-b02e-4722-8cbc-a304211025c7" class="">
+</p><p id="4bb052d4-4693-422c-ab0d-b2d2c4bd4de6" class="">
+</p><p id="ed6305c2-3cac-4323-a677-80c24c4bdb1b" class="">
+</p><h3 id="19598c7f-a90c-4f1a-b7b7-221cb8e02654" class="block-color-red_background">👨‍🎓 Certificate &amp; Conference</h3><hr id="a44821d3-2f49-44c7-9b19-931e58c64c4f"/><h3 id="fcbbbe5e-8666-4616-88c3-e2b4d7127e44" class="">Certificate</h3><hr id="630a9fb0-29df-4d98-ae5f-8346dbe80135"/><div id="b0291756-4d3b-4216-a0e0-b4144d304a44" class="column-list"><div id="8cf27410-efb2-415d-bafd-28392c79702a" style="width:62.5%" class="column"><p id="2358973d-8ef3-42ba-81f8-95e15b5e5551" class="">ICAgile CERTIFIED PROFESSIONAL</p><p id="2e62e76e-d115-4f89-b781-3c227455a3d1" class="">정보처리기능사 필기</p></div><div id="6ee1f7e6-37ad-4bfd-9b85-1abac198bdb0" style="width:37.49999999999999%" class="column"><p id="80b998bc-f513-4189-8555-57e128198ea6" class="">2019. 07</p><p id="b388b39a-de27-446f-af51-374448137e5e" class="">2019. 09</p></div></div><h3 id="4349025c-2802-4ccf-b4a1-f4d6c3dd24b0" class="">Conference</h3><hr id="9d64c795-86df-4874-9155-a941c97b20fc"/><div id="671d4d81-cf84-4427-9d57-deb8015a8f75" class="column-list"><div id="87c9beb0-9495-491a-bd4b-16119df82219" style="width:62.5%" class="column"><p id="0002f21a-47fd-491a-86a8-53f3197f0e42" class="">DevFest Android 2019</p><p id="bc9f3a02-55d5-4c20-8a4c-e1c8ba7cf466" class="">Android Studio Build Talk</p><p id="f82aaf84-c304-406d-995d-87f697e50f4a" class="">안드로이드 탐구영역</p><p id="ebdd631f-8f71-4af0-98ee-c7cba7ad706d" class="">Naver Tech Concert: Modile</p><p id="f400ea66-a256-496e-b1c9-519883a8940f" class="">Droid Knights 2019</p></div><div id="285cb3f1-0df6-4f9d-bf7a-86d0aebd81ba" style="width:37.5%" class="column"><p id="d147848c-765c-49d2-8eb0-90c71e5d02b5" class="">2019. 12</p><p id="4f543f03-6a42-4798-b8d8-828186c1b881" class="">2019. 09</p><p id="3e6c7542-d9da-4b17-bf06-54e2e796fd4a" class="">2019. 09</p><p id="b5caf876-859a-4dcf-853f-ec20e226054d" class="">2019. 07</p><p id="0bce1dd8-53be-4e0b-998f-6d7d5d202497" class="">2019. 05</p></div></div></div></article></body></html>
