@@ -4,6 +4,7 @@ title: Android
 ---
 
 <div class="posts">
+  {% paginator.posts %}
   {% for post in paginator.posts %}
   {% if post.categories[0] == "android" %}
   <div class="post">
