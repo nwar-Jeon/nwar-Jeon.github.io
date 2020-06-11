@@ -5,6 +5,7 @@ title: Algorithm
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if post.categories[0] == "algorithm" %}
   <div class="post">
     <h1 class="post-title">
       <a href="/algorithm{{ post.url | absolute_url }}">
@@ -16,6 +17,7 @@ title: Algorithm
 
     {{ post.content }}
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
