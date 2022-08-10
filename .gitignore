@@ -33,3 +33,6 @@ Gemfile
 Gemfile.lock
 Gemfile
 Gemfile
+_posts/.DS_Store
+.DS_Store
+*.html
